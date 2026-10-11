@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products | Sentra</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <link rel="icon" href="favicon_io/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+  <link rel="apple-touch-icon" href="favicon_io/apple-touch-icon.png">
+  <link rel="manifest" href="favicon_io/site.webmanifest">
+  <link rel="icon" type="image/x-icon" href="favicon_io/favicon.ico">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <nav class="navbar">
+    <div class="max-width">
+      <div class="logo">
+        <img src="images/logo.png" alt="sentra" class="logoo">
+        <span>Sentra</span>
+      </div>
+
+      <ul class="menu">
+        <li><a href="homepage.html" class="menu-btn">Home</a></li>
+        <li><a href="about.html" class="menu-btn">About</a></li>
+        <li><a href="products.html" class="menu-btn">Products</a></li>
+        <li><a href="blog.html" class="menu-btn">Blog</a></li>
+        <li><a href="contacts.html" class="menu-btn">Contacts</a></li>
+      </ul>
+
+      <div class="hamburger">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </div>
+  </nav>
+
+  <section class="products-page">
+    <div class="container">
+      <p class="breadcrumb-text">Home / Produktet</p>
+      <h1>Produktet</h1>
+
+      <div class="row mt-5">
+        <div class="col-md-3">
+          <div class="filter-box">
+            <h4>Filter</h4>
+
+            <div class="category-list">
+              <button class="category-btn active" data-category="all">Të gjitha</button>
+              <button class="category-btn" data-category="men">Meshkujt</button>
+              <button class="category-btn" data-category="women">Femra</button>
+              <button class="category-btn" data-category="special">Koleksione të veçanta</button>
+            </div>
+
+            <hr>
+
+            <div class="filter-section">
+              <h5>Çmimi</h5>
+
+              <input type="range" id="priceRange" min="100" max="1200" value="1200">
+
+              <p>Deri në: <span id="priceValue">€1200</span></p>
+            </div>
+
+
+
+            <hr>
+
+            <h5>Marka</h5>
+            <div class="check-list">
+              <label><input type="checkbox" id="seikoFilter"> Seiko</label>
+              <label><input type="checkbox" id="tissotFilter"> Tissot</label>
+              <label><input type="checkbox" id="bulovaFilter"> Bulova</label>
+              <label><input type="checkbox" id="alpinaFilter"> Alpina</label>
+
+            </div>
+          </div>
+          <button id="clearFilters" class="clear-filters-btn">
+            Pastro filtrat
+          </button>
+        </div>
+
+
+        <div class="col-md-9">
+          <div class="row g-5">
+
+            <div class="col-md-4 product-item">
+              <div class="product-card" data-brand="seiko" data-price="795" data-category="men">
+                <img src="images/pr11.png" alt="product">
+                <h5>SEIKO Prospex Speedtimer</h5>
+                <p>Solar Chronograph</p>
+                <span>€795.00</span>
+              </div>
+            </div>
+
+            <div class="col-md-4 product-item">
+              <div class="product-card" data-brand="tissot" data-price="650" data-category="men">
+                <img src="images/pr22.png" alt="product">
+                <h5>TISSOT Seastar 1000</h5>
+                <p>Powermatic 80</p>
+                <span>€650.00</span>
+              </div>
+            </div>
+
+            <div class="col-md-4 product-item">
+              <div class="product-card" data-brand="alpina" data-price="950" data-category="men">
+                <img src="images/pr3.jpeg" alt="product">
+                <h5>ALPINA Alpiner</h5>
+                <p>Extreme Automatic</p>
+                <span>€950.00</span>
+              </div>
+            </div>
+
+            <div class="col-md-4 product-item">
+              <div class="product-card" data-brand="bulova" data-price="850" data-category="men">
+                <img src="images/pr4.jpeg" alt="product">
+                <h5>BULOVA Marine Star</h5>
+                <p>Chronograph</p>
+                <span>€850.00</span>
+              </div>
+            </div>
+
+            <div class="col-md-4 product-item">
+              <div class="product-card" data-brand="classic" data-price="420" data-category="women">
+                <img src="images/prod1.png" alt="product">
+                <h5>Classic Black</h5>
+                <p>Minimal Edition</p>
+                <span>€420.00</span>
+              </div>
+            </div>
+
+            <div class="col-md-4 product-item">
+              <div class="product-card" data-brand="golden" data-price="730" data-category="special">
+                <img src="images/prod2.png" alt="product">
+                <h5>Golden Heritage</h5>
+                <p>Luxury Collection</p>
+                <span>€730.00</span>
+              </div>
+            </div>
+
+            <div class="col-md-4 product-item">
+              <div class="product-card" data-brand="seiko" data-price="540" data-category="women">
+                <img src="images/prod3.png" alt="product">
+                <h5>SEIKO Presage Classic</h5>
+                <p>Automatic Collection</p>
+                <span>€540.00</span>
+              </div>
+            </div>
+
+            <div class="col-md-4 product-item">
+              <div class="product-card" data-brand="tissot" data-price="780" data-category="women">
+                <img src="images/prod4.png" alt="product">
+                <h5>TISSOT PRX Powermatic 80</h5>
+                <p>Modern Vintage Style</p>
+                <span>€780.00</span>
+              </div>
+            </div>
+            <div class="col-md-4 product-item">
+              <div class="product-card" data-brand="bulova" data-price="620" data-category="men">
+                <img src="images/prod5.png" alt="product">
+                <h5>BULOVA Lunar Pilot</h5>
+                <p>Chronograph Edition</p>
+                <span>€620.00</span>
+              </div>
+            </div>
+
+            <div class="col-md-4 product-item">
+              <div class="product-card" data-brand="alpina" data-price="1100" data-category="special">
+                <img src="images/prod6.png" alt="product">
+                <h5>ALPINA Startimer Pilot</h5>
+                <p>Swiss Automatic</p>
+                <span>€1100.00</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="contact">
+      <div class="part-1">
+        <h2>Contact us</h2>
+        <i class="fa-solid fa-inbox"></i><span> sentra@gmail.com</span><br>
+        <i class="fa-solid fa-phone"></i><span> 0686768344</span><br>
+        <i class="fa-solid fa-location-crosshairs"></i><span> Myslym Shyri</span>
+      </div>
+
+      <div class="part-2">
+        <h2>Quick links</h2>
+        <a href="homepage.html" class="link">Home</a><br>
+        <a href="about.html" class="link">About</a><br>
+        <a href="products.html" class="link">Products</a><br>
+        <a href="blog.html" class="link">Blog</a><br>
+        <a href="contacts.html" class="link">Contact</a>
+      </div>
+
+      <div class="part-3">
+        <h2>Follow us</h2>
+        <a href="https://www.instagram.com" class="fllw"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://web.facebook.com/?_rdc=1&_rdr" class="fllw"><i class="fa-brands fa-facebook"></i></a>
+      </div>
+    </div>
+  </footer>
+  <div class="copyright">
+    <p>© 2026 Sentra. All rights reserved.</p>
+  </div>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
